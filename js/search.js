@@ -22,7 +22,6 @@ function displayAllBooks() {
 function performSearch(searchTerm) {
     console.log('Performing search for term:', searchTerm); 
 
-    // Perform the search logic here
     const searchResults = books.filter(book => {
         // Search logic
         const match = book.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -159,5 +158,4 @@ function loadSearchBar() {
 document.addEventListener('DOMContentLoaded', function () {
     loadBookData(); // Load book data when the page loads
     loadSearchBar(); // Load the search bar and display all books
-    // ... (Other code for search and displaying search results)
 });
