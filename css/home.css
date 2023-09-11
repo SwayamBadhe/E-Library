@@ -6,7 +6,19 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    min-height: 100vh;
 }
 h1 {
     color: #333;
+}
+
+.book-card {
+    margin-top: 20px;
+    height: 100%; /* Make all book cards the same height */
+}
+.book-card img {
+    max-height: 200px; /* Reduce the size of book images */
+    margin-top: 20px;
+    margin-bottom: 5px;
+    object-fit: contain;
 }
