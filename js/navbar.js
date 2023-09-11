@@ -16,6 +16,12 @@ window.addEventListener('DOMContentLoaded', function () {
                     <li class="nav-item">
                         <a class="nav-link" href="search.html">Search</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign up</a>
+                    </li>
                     <!-- Add links to other pages as needed -->
                 </ul>
             </div>
