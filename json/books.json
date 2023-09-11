@@ -39,7 +39,7 @@
         "genre": "Genre 4",
         "published": "2023",
         "description": "Description of Book 4...",
-        "imgSrc": "../static/book4.jpg",
+        "imgSrc": "../static/book4.jpeg",
         "borrowLink": "#", 
         "downloadLink": "#" 
     },
@@ -72,7 +72,7 @@
         "genre": "Genre 7",
         "published": "2023",
         "description": "Description of Book 7...",
-        "imgSrc": "../static/book7.jpg",
+        "imgSrc": "../static/book7.jpeg",
         "borrowLink": "#", 
         "downloadLink": "#" 
     },
