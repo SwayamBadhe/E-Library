@@ -31,5 +31,71 @@
         "coverImageUrl": "../static/book3.jpeg",
         "borrowLink": "#",
         "downloadLink": "#"
+    },
+    {
+        "id": 4,
+        "title": "Book 4 Title",
+        "author": "Author 4",
+        "genre": "Genre 4",
+        "published": "2023",
+        "description": "Description of Book 4...",
+        "coverImageUrl": "../static/book4.jpg",
+        "borrowLink": "#", 
+        "downloadLink": "#" 
+    },
+    {
+        "id": 5,
+        "title": "Book 5 Title",
+        "author": "Author 5",
+        "genre": "Genre 5",
+        "published": "2022",
+        "description": "Description of Book 5...",
+        "coverImageUrl": "../static/book5.jpeg",
+        "borrowLink": "#", 
+        "downloadLink": "#" 
+    },
+    {
+        "id": 6,
+        "title": "Book 6 Title",
+        "author": "Author 6",
+        "genre": "Genre 6",
+        "published": "2021",
+        "description": "Description of Book 6...",
+        "coverImageUrl": "../static/book6.jpeg",
+        "borrowLink": "#",
+        "downloadLink": "#"
+    },
+    {
+        "id": 7,
+        "title": "Book 7 Title",
+        "author": "Author 7",
+        "genre": "Genre 7",
+        "published": "2023",
+        "description": "Description of Book 7...",
+        "coverImageUrl": "../static/book7.jpg",
+        "borrowLink": "#", 
+        "downloadLink": "#" 
+    },
+    {
+        "id": 8,
+        "title": "Book 8 Title",
+        "author": "Author 8",
+        "genre": "Genre 8",
+        "published": "2022",
+        "description": "Description of Book 8...",
+        "coverImageUrl": "../static/book8.jpeg",
+        "borrowLink": "#", 
+        "downloadLink": "#" 
+    },
+    {
+        "id": 9,
+        "title": "Book 9 Title",
+        "author": "Author 9",
+        "genre": "Genre 9",
+        "published": "2021",
+        "description": "Description of Book 9...",
+        "coverImageUrl": "../static/book9.jpeg",
+        "borrowLink": "#",
+        "downloadLink": "#"
     }
 ]
