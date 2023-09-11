@@ -2,11 +2,11 @@ let books = [];
 
 // Function to fetch and load book data from the JSON file
 function loadBookData() {
-    fetch('../json/books.json') // Replace with the actual path to your JSON file
+    fetch('../json/books.json')
         .then(response => response.json())
         .then(data => {
-            books = data; // Assign the fetched data to the 'books' array
-            displayAllBooks(); // After loading the data, display all books
+            books = data; 
+            displayAllBooks(); 
         })
         .catch(error => {
             console.error('Error loading book data:', error);
@@ -15,23 +15,22 @@ function loadBookData() {
 
 // Function to display all books initially
 function displayAllBooks() {
-    // Display all books from the JSON file
     displaySearchResults(books);
 }
 
 // Function to perform the search based on the input term
 function performSearch(searchTerm) {
-    console.log('Performing search for term:', searchTerm); // Debugging statement
+    console.log('Performing search for term:', searchTerm); 
 
     // Perform the search logic here
     const searchResults = books.filter(book => {
-        // Modify this condition to customize your search logic
+        // Search logic
         const match = book.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
             book.description.toLowerCase().includes(searchTerm.toLowerCase());
         return match;
     });
 
-    console.log('Search results:', searchResults); // Debugging statement
+    console.log('Search results:', searchResults);
 
     // Display search results
     displaySearchResults(searchResults);
@@ -50,18 +49,18 @@ function displaySearchResults(results) {
         return;
     }
 
-    const matchingBooks = [];
-    const nonMatchingBooks = [];
+    // const matchingBooks = [];
+    // const nonMatchingBooks = [];
 
-    results.forEach(result => {
-        if (result.match) {
-            matchingBooks.push(result);
-        } else {
-            nonMatchingBooks.push(result);
-        }
-    });
+    // results.forEach(result => {
+    //     if (result.match) {
+    //         matchingBooks.push(result);
+    //     } else {
+    //         nonMatchingBooks.push(result);
+    //     }
+    // });
 
-    const combinedResults = [...matchingBooks, ...nonMatchingBooks];
+    // const combinedResults = [...matchingBooks, ...nonMatchingBooks];
 
     // Create an HTML list to display search results
     const resultList = document.createElement("div");

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Check if a valid book ID is present in the URL
     if (bookId) {
         // Fetch book details from the JSON file
-        fetch('../json/books.json') // Replace with the actual path to your JSON file
+        fetch('../json/books.json') 
             .then(response => response.json())
             .then(books => {
                 // Find the book with the specified ID
