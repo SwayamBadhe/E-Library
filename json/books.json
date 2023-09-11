@@ -6,7 +6,7 @@
         "genre": "Genre 1",
         "published": "2023",
         "description": "Description of Book 1...",
-        "coverImageUrl": "../static/book1.jpg",
+        "imgSrc": "../static/book1.jpg",
         "borrowLink": "#", 
         "downloadLink": "#" 
     },
@@ -17,7 +17,7 @@
         "genre": "Genre 2",
         "published": "2022",
         "description": "Description of Book 2...",
-        "coverImageUrl": "../static/book2.jpeg",
+        "imgSrc": "../static/book2.jpeg",
         "borrowLink": "#", 
         "downloadLink": "#" 
     },
@@ -28,7 +28,7 @@
         "genre": "Genre 3",
         "published": "2021",
         "description": "Description of Book 3...",
-        "coverImageUrl": "../static/book3.jpeg",
+        "imgSrc": "../static/book3.jpeg",
         "borrowLink": "#",
         "downloadLink": "#"
     },
@@ -39,7 +39,7 @@
         "genre": "Genre 4",
         "published": "2023",
         "description": "Description of Book 4...",
-        "coverImageUrl": "../static/book4.jpg",
+        "imgSrc": "../static/book4.jpg",
         "borrowLink": "#", 
         "downloadLink": "#" 
     },
@@ -50,7 +50,7 @@
         "genre": "Genre 5",
         "published": "2022",
         "description": "Description of Book 5...",
-        "coverImageUrl": "../static/book5.jpeg",
+        "imgSrc": "../static/book5.jpeg",
         "borrowLink": "#", 
         "downloadLink": "#" 
     },
@@ -61,7 +61,7 @@
         "genre": "Genre 6",
         "published": "2021",
         "description": "Description of Book 6...",
-        "coverImageUrl": "../static/book6.jpeg",
+        "imgSrc": "../static/book6.jpeg",
         "borrowLink": "#",
         "downloadLink": "#"
     },
@@ -72,7 +72,7 @@
         "genre": "Genre 7",
         "published": "2023",
         "description": "Description of Book 7...",
-        "coverImageUrl": "../static/book7.jpg",
+        "imgSrc": "../static/book7.jpg",
         "borrowLink": "#", 
         "downloadLink": "#" 
     },
@@ -83,7 +83,7 @@
         "genre": "Genre 8",
         "published": "2022",
         "description": "Description of Book 8...",
-        "coverImageUrl": "../static/book8.jpeg",
+        "imgSrc": "../static/book8.jpeg",
         "borrowLink": "#", 
         "downloadLink": "#" 
     },
@@ -94,7 +94,7 @@
         "genre": "Genre 9",
         "published": "2021",
         "description": "Description of Book 9...",
-        "coverImageUrl": "../static/book9.jpeg",
+        "imgSrc": "../static/book9.jpeg",
         "borrowLink": "#",
         "downloadLink": "#"
     }
