@@ -17,6 +17,9 @@ window.addEventListener('DOMContentLoaded', function () {
                         <a class="nav-link" href="search.html">Search</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="book_detail.html">Book Detail</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="login.html">Login</a>
                     </li>
                     <li class="nav-item">

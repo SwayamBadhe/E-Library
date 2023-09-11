@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "title": "Book 1 Title",
+        "author": "Author 1",
+        "genre": "Genre 1",
+        "published": "2023",
+        "description": "Description of Book 1...",
+        "coverImageUrl": "../static/book1.jpg",
+        "borrowLink": "#", 
+        "downloadLink": "#" 
+    },
+    {
+        "id": 2,
+        "title": "Book 2 Title",
+        "author": "Author 2",
+        "genre": "Genre 2",
+        "published": "2022",
+        "description": "Description of Book 2...",
+        "coverImageUrl": "../static/book2.jpeg",
+        "borrowLink": "#", 
+        "downloadLink": "#" 
+    },
+    {
+        "id": 3,
+        "title": "Book 3 Title",
+        "author": "Author 3",
+        "genre": "Genre 3",
+        "published": "2021",
+        "description": "Description of Book 3...",
+        "coverImageUrl": "../static/book3.jpeg",
+        "borrowLink": "#",
+        "downloadLink": "#"
+    }
+]
