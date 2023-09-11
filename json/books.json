@@ -60,7 +60,7 @@
         "author": "Author 6",
         "genre": "Genre 6",
         "published": "2021",
-        "description": "Description of Book 6...",
+        "description": "Description of Book 6... it's amazing",
         "imgSrc": "../static/book6.jpeg",
         "borrowLink": "#",
         "downloadLink": "#"
