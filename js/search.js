@@ -71,7 +71,7 @@ function displaySearchResults(results) {
         const colDiv = document.createElement("div");
         colDiv.classList.add(
             "col-md-4",
-            "d-flex",
+            "mb-4",
             "justify-content-center",
             "mx-auto"
         ); // Add 'mx-auto' class to center-align the column
@@ -105,7 +105,7 @@ function displaySearchResults(results) {
 
         const readLink = document.createElement("a");
         readLink.classList.add("btn", "btn-primary");
-        readLink.href = "book1.html"; // You can set the actual URL here
+        readLink.href = `book_detail.html?id=${result.id}`; // You can set the actual URL here
         readLink.textContent = "Read";
 
         cardBody.appendChild(title);

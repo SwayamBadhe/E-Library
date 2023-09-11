@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 if (book) {
                     // Update the placeholders with book data
-                    document.getElementById('book-cover').src = book.coverImageUrl;
+                    document.getElementById('book-cover').src = book.imgSrc;
                     document.getElementById('book-title').textContent = book.title;
                     document.getElementById('book-author').textContent = `Author: ${book.author}`;
                     document.getElementById('book-genre').textContent = `Genre: ${book.genre}`;
