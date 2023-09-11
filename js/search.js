@@ -132,29 +132,27 @@ function loadSearchBar() {
     const searchBarContent = document.getElementById("search-bar");
     const searchResultsDiv = document.getElementById("search-results");
 
-    // Create the search bar HTML directly in JavaScript
-    searchBarContent.innerHTML = `
-        <!-- Include the reusable search bar -->
-        <div class="input-group">
-            <input type="text" class="form-control" id="search-input" placeholder="Search for books...">
-            <div class="input-group-append">
-                <button class="btn btn-primary" type="button" id="search-button">Search</button>
-            </div>
-        </div>
-    `;
+    // Fetch the search bar HTML from an external file
+    fetch('search_bar.html')
+        .then(response => response.text())
+        .then(html => {
+            searchBarContent.innerHTML = html;
 
-    const searchInput = document.getElementById("search-input");
-    const searchButton = document.getElementById("search-button");
-    
+            const searchInput = document.getElementById("search-input");
+            const searchButton = document.getElementById("search-button");
 
-    // Add event listener for the search button
-    searchButton.addEventListener("click", function () {
-        const searchTerm = searchInput.value;
-        // Call a function to perform the search based on searchTerm
-        performSearch(searchTerm);
-    });
-    
-    displayAllBooks();
+            // Add event listener for the search button
+            searchButton.addEventListener("click", function () {
+                const searchTerm = searchInput.value;
+                // Call a function to perform the search based on searchTerm
+                performSearch(searchTerm);
+            });
+
+            displayAllBooks();
+        })
+        .catch(error => {
+            console.error('Error loading search bar: ', error);
+        });
 }
 
 // Call the function to load book data when the DOM is loaded
