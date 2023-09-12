@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const registrationForm = document.getElementById("registration-form");
+    const messageElement = document.getElementById("message");
 
     registrationForm.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -24,7 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 );
 
                 if (userExists) {
-                    alert("Username or email already exists");
+                    messageElement.textContent = "Username or email already exists"
+                    messageElement.classList.remove("d-none");
                 } 
             })
             .catch((error) => {
