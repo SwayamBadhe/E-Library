@@ -19,8 +19,8 @@ function displayAllBooks() {
 }
 
 // Function to perform the search based on the input term
-function performSearch(searchTerm) {
-    console.log('Performing search for term:', searchTerm); 
+const performSearch = (searchTerm) => {
+    console.log('Performing search for term: ', searchTerm);
 
     const searchResults = books.filter(book => {
         // Search logic
@@ -36,30 +36,19 @@ function performSearch(searchTerm) {
 }
 
 
-function displaySearchResults(results) {
+const displaySearchResults = (results) => {
     const searchResultsDiv = document.getElementById("search-results");
+    const children = searchResultsDiv.children;
 
-    // Clear previous search results
-    searchResultsDiv.innerHTML = "";
-
-    // Check if there are any search results
-    if (results.length === 0) {
-        searchResultsDiv.innerHTML = "<p>No results found.</p>";
-        return;
+    while (children.length > 1) {
+        searchResultsDiv.removeChild(children[0]);
     }
 
-    // const matchingBooks = [];
-    // const nonMatchingBooks = [];
-
-    // results.forEach(result => {
-    //     if (result.match) {
-    //         matchingBooks.push(result);
-    //     } else {
-    //         nonMatchingBooks.push(result);
-    //     }
-    // });
-
-    // const combinedResults = [...matchingBooks, ...nonMatchingBooks];
+    // Check if there are anu search results
+    if (results.length === 0) {
+        searchResultsDiv.innerHTML = "<p>No results found</p>";
+        return;
+    }
 
     // Create an HTML list to display search results
     const resultList = document.createElement("div");
@@ -72,10 +61,10 @@ function displaySearchResults(results) {
             "mb-4",
             "justify-content-center",
             "mx-auto"
-        ); // Add 'mx-auto' class to center-align the column
+        );
 
-        const cardDiv = document.createElement("div");
-        cardDiv.classList.add("card", "book-card");
+        const CardDiv = document.createElement("div");
+        CardDiv.classList.add("card", "book-card");
 
         const img = document.createElement("img");
         img.classList.add("card-img-top");
@@ -103,7 +92,7 @@ function displaySearchResults(results) {
 
         const readLink = document.createElement("a");
         readLink.classList.add("btn", "btn-primary");
-        readLink.href = `book_detail.html?id=${result.id}`; // You can set the actual URL here
+        readLink.href = `book_detail.html?id=${result.id}`; // actual URL here
         readLink.textContent = "Read";
 
         cardBody.appendChild(title);
@@ -111,29 +100,27 @@ function displaySearchResults(results) {
         cardBody.appendChild(description);
         cardBody.appendChild(readLink);
 
-        cardDiv.appendChild(img);
-        cardDiv.appendChild(cardBody);
+        CardDiv.appendChild(img);
+        CardDiv.appendChild(cardBody);
 
-        colDiv.appendChild(cardDiv);
+        colDiv.appendChild(CardDiv);
 
         resultList.appendChild(colDiv);
     });
 
     // Append the resultList to your searchResultsDiv
-    searchResultsDiv.appendChild(resultList);
-
-    // Append the list to the search results div
-    searchResultsDiv.appendChild(resultList);
+// Append the resultList as the first element in search-results (searchResultsDiv)
+searchResultsDiv.insertBefore(resultList, searchResultsDiv.firstChild);
+    
 }
 
 // Function to load and display the search bar HTML
-function loadSearchBar() {
+const loadSearchBar = () => {
     const searchBarContent = document.getElementById("search-bar");
-    const searchResultsDiv = document.getElementById("search-results");
 
     // Fetch the search bar HTML from an external file
     fetch('search_bar.html')
-        .then(response => response.text())
+        .then(res => res.text())
         .then(html => {
             searchBarContent.innerHTML = html;
 
@@ -141,21 +128,18 @@ function loadSearchBar() {
             const searchButton = document.getElementById("search-button");
 
             // Add event listener for the search button
-            searchButton.addEventListener("click", function () {
+            searchButton.addEventListener("click", () => {
                 const searchTerm = searchInput.value;
                 // Call a function to perform the search based on searchTerm
                 performSearch(searchTerm);
-            });
-
-            displayAllBooks();
+            })
         })
         .catch(error => {
             console.error('Error loading search bar: ', error);
         });
 }
 
-// Call the function to load book data when the DOM is loaded
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     loadBookData(); // Load book data when the page loads
     loadSearchBar(); // Load the search bar and display all books
-});
+})
