@@ -14,10 +14,10 @@ h1 {
 
 .book-card {
     margin-top: 20px;
-    height: 100%; /* Make all book cards the same height */
+    height: 100%; 
 }
 .book-card img {
-    max-height: 200px; /* Reduce the size of book images */
+    max-height: 200px;
     margin-top: 20px;
     margin-bottom: 5px;
     object-fit: contain;
