@@ -1,24 +1,20 @@
 .book-cover {
-    max-width: 300px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the image */
+    max-width: 300px;
+    margin: 0 auto; 
 }
 
-/* Style the book details section */
 .book-details {
     text-align: center;
 }
 
-/* Style the description */
 .description {
     text-align: justify;
 }
 
-/* Style the borrow/download buttons */
 .borrow-download {
     text-align: center;
 }
 
-/* Style the related books section (if needed) */
 .related-books {
     text-align: center;
 }
